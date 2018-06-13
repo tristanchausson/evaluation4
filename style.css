@@ -1,0 +1,88 @@
+.header {
+	display: flex;
+}
+
+img {
+	max-width: 150px;
+	height: auto;
+}
+
+h1, h3 {
+	font-size: 4vmax;
+	text-align: center;
+	margin: auto;
+}
+
+.resa {
+	float: right;
+	margin-right: 5vw;
+}
+
+main {
+	margin-top: 15vh;
+}
+
+table {
+  table-layout: fixed;
+/*  width: 100%;*/
+  border-collapse: collapse;
+  border: 3px solid purple;
+  text-align: center;
+  margin: auto;
+  margin-bottom: 5vh;
+}
+
+th {
+	padding: 10px;
+	border: 2px solid purple;
+}
+
+tr, td {
+  padding: 10px;
+  border: 1px solid purple;
+}
+
+button {
+    margin:0 auto;
+    margin-top: 4vh;
+    display:block;
+}
+
+.main {
+	text-align: center;
+	margin-top: 15vh;
+}
+
+div {
+	display: flex;
+	margin: 0 auto; 
+}
+
+h4 {
+	text-align: center;
+	margin-bottom: 5vh;
+}
+
+.supprime {
+	display: flex;
+}
+
+.annule {
+	margin-right: 2vw;
+}
+
+.confirme {
+	margin-left: 2vw;
+}
+
+.editer {
+	display: flex;
+	width: 40vw;
+	text-align: center;
+}
+
+.modifier {
+	width: 25vw;
+	height: 8vh;
+}
+
