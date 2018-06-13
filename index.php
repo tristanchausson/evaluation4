@@ -33,11 +33,11 @@ require('bdd.php');
 				<th>Actions</th>
 			</tr>
 			<?php
-			$news = $pdo->query('SELECT * FROM reservations INNER JOIN clients ON clients.id=reservations.clientId INNER JOIN chambres ON chambres.id=reservations.chambreId')->fetchAll(PDO::FETCH_ASSOC);
+			$news = $pdo->query('SELECT reservations.id, clients.nom, chambres.numero, reservations.dateEntree, reservations.dateSortie, reservations.statut FROM reservations INNER JOIN clients ON clients.id=reservations.clientId INNER JOIN chambres ON chambres.id=reservations.chambreId')->fetchAll(PDO::FETCH_ASSOC);
 				foreach ($news as $row) {
 					echo '<tr><td name="id" value="'.$row['id'].'">'.$row['id'].'</td>';
-					echo '<td name="client" value="'.$row['clientId'].'">'.$row['clientId'].'</td>';
-					echo '<td name="chambre" value="'.$row['chambreId'].'">'.$row['chambreId'].'</td>';
+					echo '<td name="client" value="'.$row['nom'].'">'.$row['nom'].'</td>';
+					echo '<td name="chambre" value="'.$row['numero'].'">'.$row['numero'].'</td>';
 					echo '<td name="date" value="'.$row['dateEntree'].'">'.$row['dateEntree']." ".$row['dateSortie'].'</td>';
 					echo '<td name="statut" value="'.$row['statut'].'">'.$row['statut'].'</td>';
 					echo '<td value="'.$row['edit'].'"><p><a href="editer.php" name="modifier">Editer</a> - <a href="supprimer.php" name="supprimer">Supprimer</a></p></td></tr>';

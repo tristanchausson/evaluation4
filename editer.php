@@ -23,11 +23,11 @@ require('bdd.php');
 	$statut  = $_POST['statut'];
 	$news = $pdo->query('SELECT * FROM reservations INNER JOIN clients ON clients.id=reservations.clientId INNER JOIN chambres ON chambres.id=reservations.chambreId')->fetchAll(PDO::FETCH_ASSOC);
 		foreach ($news as $row) {
-			echo '<div class="editer"><h6>Client :</h6><input class="modifier" type="text" name="client" value="'.$row['clientId'].'"></div>';
-			echo '<div class="editer"><h6>Chambre :</h6><input class="modifier" type="text" name="client" value="'.$row['chambreId'].'"></div>';
-			echo '<div class="editer"><h6>Date Entrée :</h6><input class="modifier" type="date" name="client" value="'.$row['dateEntree'].'"></div>';
-			echo '<div class="editer"><h6>Date Sortie :</h6><input class="modifier" type="date" name="client" value="'.$row['dateSortie'].'"></div>';
-			echo '<div class="editer"><h6>Statut :</h6><input class="modifier" type="text" name="client" value="'.$row['statut'].'"></div>';
+			echo '<div class="editer"><h6>Client :</h6><input class="modifier" type="text" name="client" value="'.$row['clientId'].'" placeholder="'.$row['clientId'].'"></div>';
+			echo '<div class="editer"><h6>Chambre :</h6><input class="modifier" type="text" name="client" value="'.$row['chambreId'].'" placeholder="'.$row['chambreId'].'"></div>';
+			echo '<div class="editer"><h6>Date Entrée :</h6><input class="modifier" type="date" name="client" value="'.$row['dateEntree'].'" placeholder="'.$row['dateEntree'].'"></div>';
+			echo '<div class="editer"><h6>Date Sortie :</h6><input class="modifier" type="date" name="client" value="'.$row['dateSortie'].'" placeholder="'.$row['dateSortie'].'"></div>';
+			echo '<div class="editer"><h6>Statut :</h6><input class="modifier" type="text" name="client" value="'.$row['statut'].'" placeholder="'.$row['statut'].'"></div>';
 		}	
 	}
 ?>
