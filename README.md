@@ -14,14 +14,13 @@ Compétence :
 * *Développer un interface utilisateur*
 * *Développer des composants d'accès aux données*
 * *Développer des pages web en lien avec une base de données*
-* *Développer une application simple de mobilité numérique*
 
 ## Contraintes:
 
 L'interface doit être responsive.
 Aucune connexion utilisateur n'est demandée.
 Aucun framewrok PHP n'est autorisé.
-Aucun framewrok javascript n'est autorisé.
+Le javascript n'est pas autorisé.
 Le choix (ou non) d'un framework CSS est libre.
 
 Note: la vérification des résevations pour une chambre n'est pas demandé, il sera
@@ -29,10 +28,7 @@ possible de créer plusieurs réservation aux même dates sur une chambre.
 
 ## Source
 
-Vous trouverez :
-* <a href="https://github.com/SimplonCahors/evaluation_4/blob/master/database_eval4.sql">Un dump de la base de données</a> à utiliser.
-* <a href="https://github.com/SimplonCahors/evaluation_4/tree/master/wireframes">Les wireframes de l'application</a> (en vert les fonctionnalités non obligatoires, à traiter dans un second temps si possible)
-
+Vous trouverez <a href="https://github.com/SimplonCahors/evaluation_4/blob/master/database_eval4.sql">ici un dump de la base de données</a> à utiliser.
 
 ## Réalisation :
 **Durée :** 1 à 2 jours  

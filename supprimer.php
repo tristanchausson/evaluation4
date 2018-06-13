@@ -36,10 +36,24 @@ require('bdd.php');
 		}
 	?> -->
 
-	<form class="supprime" action="index.php" method="post">
+	<form class="boutons" action="index.php" method="post">
 		<button name="annule" class="annule">Annuler</button>
 		<button name="confirme" class="confirme">Confirmer la suppression</button>
 	</form>
+
+<?php
+	if (isset($_POST['confirme'])) {
+	try {
+		$suppr = $pdo->prepare("DELETE FROM reservations WHERE");
+	}
+	catch (PDOException $e) {
+		print "Error!: " . $e->getMessage() . "<br/>";
+		die();
+	}
+	echo "Suppression effectuée";
+	header('Refresh: 2; url=../index.php');
+}
+?>
 
 </main>
 

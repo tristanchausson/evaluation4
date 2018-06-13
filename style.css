@@ -63,7 +63,7 @@ h4 {
 	margin-bottom: 5vh;
 }
 
-.supprime {
+.boutons {
 	display: flex;
 }
 
@@ -72,6 +72,14 @@ h4 {
 }
 
 .confirme {
+	margin-left: 2vw;
+}
+
+.add {
+	margin-right: 2vw;
+}
+
+.modify {
 	margin-left: 2vw;
 }
 
